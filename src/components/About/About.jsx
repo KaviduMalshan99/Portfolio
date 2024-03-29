@@ -20,7 +20,7 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>Hello, I'm Kavidu Malshan Kulathunga, an enthusiastic undergraduate student pursuing a BSc (Hons) in Information Technology with a specialization in Software Engineering at SLIIT. My journey in the world of technology has been nothing short of thrilling.</p>
+          <p>Hello, I am Kavidu Malshan Kulathunga, an enthusiastic undergraduate student pursuing a BSc (Hons) in Information Technology with a specialization in Software Engineering at SLIIT. My journey in the world of technology has been nothing short of thrilling.</p>
           <p>As a dedicated website developer, I am well-versed in both frontend and backend technologies. My skills encompass a variety of programming languages including React, JavaScript, HTML, CSS, PHP, and more. I am passionate about crafting seamless and visually appealing user experiences, making UI/UX design an integral part of my skill set.</p>
           <button className='flat-button'><a href={CV} download="KviduKM">Downlord CV</a> </button>
           </div>
