@@ -1,0 +1,120 @@
+.Work-page{
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1{
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #ffd700;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+        }
+
+    }
+
+    .slick-slide > div{
+        margin: 0 10px;
+    }
+
+    .projects-container {
+        
+        margin-top: 15%;
+        margin-left: 15%;
+        margin-right: 8%;
+        animation: fadeInUp 4s 1.8s backwards;
+        .project {
+          
+          
+          background-color: #444;
+          border-radius: 15px;
+          
+          
+      
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            
+          }
+      
+          .project-details {
+            padding: 10px;
+            padding-right: 10px;
+      
+            h2 {
+              margin-top: 0px;
+              margin-bottom: 15px;
+              font-size: 18px;
+              margin-left: 10px;
+              color: #ffd700;
+            }
+      
+            .buttons {
+              display: flex;
+      
+              .demo-button,
+              .github-button {
+                flex: 1;
+                padding: 10px;
+                margin-left: 10px;
+                margin-right: 25px;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+                
+                &.demo-button {
+                    color: #ffd700;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    border: 1px solid #ffd700;
+                    background: #022c43;
+            
+                    &:hover{
+                        background-color: #ffd700;
+                        color: #333;
+                    }
+                }
+      
+                &.github-button {
+                    color: #022c43;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    border: 1px solid #ffd700;
+                    background: #ffd700;
+            
+                    
+                }
+              }
+            }
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 400px) {
+
+  .text-zone{
+
+    left: 25%;
+  }
+
+}
