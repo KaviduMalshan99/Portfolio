@@ -2,7 +2,7 @@ import '../About/About.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import { useState } from 'react'
-import CV from '../../assets/Kavidu_KM.pdf'
+import CV from '../../assets/Kavidu_KM_CV.pdf'
 
 const About = () => {
 
