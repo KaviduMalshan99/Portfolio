@@ -10,7 +10,7 @@ import cpp from '../../../src/assets/icons/CPP.svg';
 import css from '../../../src/assets/icons/CSS.svg';
 import figma from '../../../src/assets/icons/Figma-Dark.svg';
 import git from '../../../src/assets/icons/Git.svg';
-import java from '../../../src/assets/icons/java-Dark.svg';
+import java from '../../../src/assets/icons/java-Light.svg';
 import js from '../../../src/assets/icons/javaScript.svg';
 import mysql from '../../../src/assets/icons/MySQL-Dark.svg';
 import next from '../../../src/assets/icons/NextJS-Dark.svg';
