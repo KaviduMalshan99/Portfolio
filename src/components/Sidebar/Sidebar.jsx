@@ -14,19 +14,19 @@ const Sidebar = () => {
             <p>Kavidu_KM</p>
         </Link>
         <nav>
-            <NavLink exeat='true' activeclassname='active' className='home-link' to='/'>
+            <NavLink exeat='true' activeclassname='active' className='home-link' to='/Portfolio/'>
                 <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
             </NavLink>
-            <NavLink exeat='true' activeclassname='active' className='about-link' to='/about'>
+            <NavLink exeat='true' activeclassname='active' className='about-link' to='/Portfolio/about'>
                 <FontAwesomeIcon icon={faUser} color='#4d4d4e'/>
             </NavLink>
-            <NavLink exeat='true' activeclassname='active' className='skill-link' to='/skill'>
+            <NavLink exeat='true' activeclassname='active' className='skill-link' to='/Portfolio/skill'>
                 <FontAwesomeIcon icon={faCode} color='#4d4d4e'/>
             </NavLink>
-            <NavLink exeat='true' activeclassname='active' className='work-link' to='/work'>
+            <NavLink exeat='true' activeclassname='active' className='work-link' to='/Portfolio/work'>
                 <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e'/>
             </NavLink>
-            <NavLink exeat='true' activeclassname='active' className='contact-link' to='/contact'>
+            <NavLink exeat='true' activeclassname='active' className='contact-link' to='/Portfolio/contact'>
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
             </NavLink>
 

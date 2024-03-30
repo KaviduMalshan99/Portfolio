@@ -1,4 +1,3 @@
-
 import './App.scss'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
@@ -9,13 +8,11 @@ import Contact from './components/Contact/Contact'
 import Skills from './components/Skills/Skills'
 
 function App() {
-  
-
   return (
     <>
       <Routes>
-        <Route path='/' element={<Layout/>}>
-          <Route index element={<Home/>}/>
+        <Route path='/Portfolio/*' element={<Layout/>}>
+          <Route index element={<Home/>}/> {/* Define a route for the root path ("/") */}
           <Route path='about' element={<About/>}/>
           <Route path='skill' element={<Skills/>}/>
           <Route path='work' element={<Work/>}/>
