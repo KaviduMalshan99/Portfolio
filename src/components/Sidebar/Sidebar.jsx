@@ -52,7 +52,7 @@ const Sidebar = () => {
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' className='social' href="">
+                <a target='_blank' rel='noreferrer' className='social' href="https://www.facebook.com/share/46vxJR76zvJEChcx/?mibextid=qi2Omg">
                     <FontAwesomeIcon icon={faFacebook} color='#4d4d4e'/>
                 </a>
             </li>
