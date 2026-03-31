@@ -2,7 +2,7 @@ import '../Home/Home.scss'
 import Loader from 'react-loaders'
 import Animatedletter from '../AnimatedLetters/AnimatedLetters'
 import { useState } from 'react'
-import LOGO from '../../assets/images/logo-k.png'
+import LOGO from '../../assets/images/logokmk.png'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
             </h1>
 
             <h2>Frontend Developer / Backend Developer / UI/UX Designer</h2>
-            <Link to='/contact' className='flat-button'>CONTACT ME</Link>
+            <Link to='/Portfolio/contact' className='flat-button'>CONTACT ME</Link>
         </div>
 
         <img src={LOGO} alt="" className='mainimg' />

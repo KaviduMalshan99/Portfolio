@@ -1,7 +1,7 @@
 
 import '../Sidebar/Sidebar.scss'
 import { Link, NavLink } from 'react-router-dom'
-import LOGO from '../../assets/images/logo-k.png'
+import LOGO from '../../assets/images/logokmk.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faCode, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faBehance, faFacebook, faGitAlt, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -9,7 +9,7 @@ import { faBehance, faFacebook, faGitAlt, faInstagram, faLinkedin } from '@forta
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-        <Link className='logo' to='/'>
+        <Link className='logo' to='/Portfolio/'>
             <img src={LOGO} alt="logo" />
             <p>Kavidu_KM</p>
         </Link>
