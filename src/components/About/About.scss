@@ -10,6 +10,7 @@
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
+        text-align: justify;
 
         h1{
             font-size: 53px;
@@ -101,128 +102,80 @@
     
 }
 
-@media screen and (max-width: 400px) {
-    .about-page {
-        .text-zone {
-            position: relative; 
-            left: 15%; 
-            top: 40%;
-            transform: none; 
-            width: 100%; 
-            
-             
-        }
-        .text-zone h1 {
-            margin-top: 45%;
-            font-size: 36px; 
-            margin-bottom: 20px; 
-            left: 0; 
-        }
-        .flat-button {
-            float: none; 
-            margin: 25px auto 0; 
-            display: block; 
-        }
-        .text-zone p {
-            font-size: 14px;
-            animation: fadeInUp 4s 1.8s backwards; 
-            padding-left: 10px; 
-            padding-right: 60px;
-            text-align: justify;
-        }
-        .text-zone p:nth-of-type(1) {
-            animation-delay: 0; 
-        }
-        .text-zone p:nth-of-type(2) {
-            animation-delay: 0; 
-        }
-        .text-zone p:nth-of-type(3) {
-            animation-delay: 0; 
-        }
-    }
-}
-
-
-@media screen and (max-width: 400px) {
-    .about-page {
-        .text-zone {
-            position: relative; 
-            left: 15%; 
-            top: 40%;
-            transform: none; 
-            width: 100%; 
-            
-             
-        }
-        .text-zone h1 {
-            margin-top: 45%;
-            font-size: 36px; 
-            margin-bottom: 20px; 
-            left: 0; 
-        }
-        .flat-button {
-            float: none; 
-            margin: 25px auto 0; 
-            display: block; 
-        }
-        .text-zone p {
-            font-size: 14px;
-            animation: fadeInUp 4s 1.8s backwards; 
-            padding-left: 10px; 
-            padding-right: 60px;
-            text-align: justify;
-        }
-        .text-zone p:nth-of-type(1) {
-            animation-delay: 0; 
-        }
-        .text-zone p:nth-of-type(2) {
-            animation-delay: 0; 
-        }
-        .text-zone p:nth-of-type(3) {
-            animation-delay: 0; 
-        }
-    }
-}
-
-
 @media screen and (max-width: 768px) {
     .about-page {
-        .text-zone {
-            position: relative; 
-            left: 18%; 
-            top: 40%;
-            transform: none; 
-            width: 100%; 
-            
-             
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: calc(100vh - 60px);
+      padding: 20px 0;
+      overflow-y: auto;
+  
+      .myimg {
+        order: -1;        /* image on top */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+  
+        img {
+          width: 160px;
+          height: 160px;
+          object-fit: cover;
+          border-radius: 50%;   /* circle on mobile looks clean */
+          margin: 0;
         }
-        .text-zone h1 {
-            margin-top: 45%;
-            font-size: 36px; 
-            margin-bottom: 20px; 
-            left: 0; 
+      }
+  
+      .text-zone {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 90%;
+        max-height: unset;
+        text-align: left;
+  
+        h1 {
+          font-size: 36px;
+          margin-bottom: 5px;
+          left: 0;
         }
+  
+        p {
+          font-size: 13px;
+          line-height: 20px;
+          padding-left: 0;
+          min-width: unset;
+        }
+  
         .flat-button {
-            float: none; 
-            margin: 25px auto 0; 
-            display: block; 
+          float: none;
+          display: inline-block;
+          margin-left: 0;
+          margin-top: 5px;
+          margin-bottom: 30px;
+          font-size: 11px;
+          letter-spacing: 3px;
+          padding: 8px 14px;
         }
-        .text-zone p {
-            font-size: 14px;
-            animation: fadeInUp 4s 1.8s backwards; 
-            padding-left: 10px; 
-            padding-right: 30%;
-            text-align: justify;
-        }
-        .text-zone p:nth-of-type(1) {
-            animation-delay: 0; 
-        }
-        .text-zone p:nth-of-type(2) {
-            animation-delay: 0; 
-        }
-        .text-zone p:nth-of-type(3) {
-            animation-delay: 0; 
-        }
+      }
     }
-}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .about-page {
+      .myimg img {
+        width: 130px;
+        height: 130px;
+      }
+  
+      .text-zone {
+        h1 { font-size: 28px; }
+        p  { font-size: 12px; line-height: 18px; }
+      }
+    }
+  }
+
 

@@ -1,28 +1,48 @@
 .page {
-    padding: 20px; 
+  padding: 20px;
 
+  .top-tags {
+      bottom: auto;
+      top: 35px;
+  }
 
-    .top-tags {
-        bottom: auto;
-        top: 35px;
-        
-    }
+  .tags {
+      color: #ffd700;
+      opacity: 0.6;
+      position: absolute;
+      bottom: 0;
+      left: 120px;
+      font-size: 18px;
+      font-family: 'La Belle Aurore', cursive;
+      margin-bottom: 25px;
+  }
 
-    .tags {
-        color: #ffd700;
-        opacity: 0.6;
-        position: absolute;
-        bottom: 0;
-        left: 120px;
-        font-size: 18px;
-        font-family: 'La Belle Aurore', cursive;
-        margin-bottom: 25px;
-    }
-
-    .bottom-tag-html {
-        margin-left: 50px;
-    }
+  .bottom-tag-html {
+      margin-left: 50px;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .page {
+      margin-left: 0 !important;
+      padding-top: 70px;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      min-height: 100vh;
 
+      .tags {
+          left: 16px;
+          font-size: 14px;
+      }
 
+      .top-tags {
+          top: 70px;   /* below the mobile navbar */
+      }
+
+      .bottom-tags {
+          bottom: 10px;
+      }
+  }
+}

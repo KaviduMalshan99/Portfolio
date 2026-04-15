@@ -18,6 +18,7 @@ const projects = [
     id: 1,
     title: 'Rajarata Fire Website Project',
     image: img1, // Replace with your image URL
+    description: 'Corporate website built for fire safety services with modern UI and responsive design.',
     demoLink: 'https://rajaratafire.com/', // Replace with your demo link
     githubLink: 'https://www.linkedin.com/posts/kavidumkulathunga_uiuxdesign-webdevelopment-rajaratafireservices-activity-7144226867183595520-XNo5?utm_source=share&utm_medium=member_desktop', // Replace with your GitHub link
   },
@@ -25,12 +26,14 @@ const projects = [
     id: 1,
     title: 'Epic Roam Website Project',
     image: img2, // Replace with your image URL
+    description: 'Corporate website built for fire safety services with modern UI and responsive design.',
     demoLink: 'https://www.linkedin.com/posts/kavidumkulathunga_webdevelopment-reactjs-react-activity-7159506144758046720-QkYy?utm_source=share&utm_medium=member_desktop', // Replace with your demo link
     githubLink: 'https://github.com/KaviduMalshan99/Epic-Roam-fashion-Store-website-Project.git', // Replace with your GitHub link
   },{
     id: 1,
     title: 'ActiLife App UI/UX Design',
     image: img3, // Replace with your image URL
+    description: 'Corporate website built for fire safety services with modern UI and responsive design.',
     demoLink: 'https://www.figma.com/file/hJNe0yQ5gkNXkhIDFDbjnp/traveller-app-dashboard?type=design&node-id=0%3A1&mode=dev&t=0Axn469fRl4zkLMt-1', // Replace with your demo link
   },{
     id: 1,
@@ -82,24 +85,27 @@ const Work = () => {
         <div className="projects-container">
         <Slider {...settings}>
               {projects.map((project) => (
-                    <div className="project" key={project.id}>
-                      <img src={project.image} alt={project.title} />
+                <div className="project" key={project.id}>
+                  <img src={project.image} alt={project.title} />
 
-                      <div className="project-details">
-                        <h2>{project.title}</h2>
-                        <div className="buttons">
-                          <a href={project.demoLink} target="_blank" rel="noreferrer" className="demo-button">
-                            Demo 
-                          </a>
-                          {project.githubLink &&(
-                            <a href={project.githubLink} target="_blank" rel="noreferrer" className="github-button">
-                            GitHub
-                          </a>
-                          )}
-                        </div>
-                      </div>
+                  <div className="project-details">
+                    <h2>{project.title}</h2>
 
-                      </div>
+                    <p className="desc">{project.description}</p>
+
+                    <div className="buttons">
+                      <a href={project.demoLink} target="_blank" rel="noreferrer" className="demo-button">
+                        Demo
+                      </a>
+
+                      {project.githubLink && (
+                        <a href={project.githubLink} target="_blank" rel="noreferrer" className="github-button">
+                          GitHub
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
               ))}
             </Slider>
         </div>

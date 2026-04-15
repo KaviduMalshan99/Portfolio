@@ -9,7 +9,7 @@ const Home = () => {
 
   const [letterClass]=useState('text-animate')
   const nameArray = ['a','v','i','d','u']
-  const jobArray=['W','e','b',' ','D','e','v','e','l','o','p','e','r','.']
+  const jobArray=['B','a','c','k','e','n','d',' ','E','n','g','i','n','e','e','r','.']
 
   return (
     <>
@@ -30,11 +30,11 @@ const Home = () => {
                 <br />
                 <Animatedletter letterClass={letterClass}
                 strArray={jobArray}
-                idx={20}
+                idx={17}
                 />
             </h1>
 
-            <h2>Frontend Developer / Backend Developer / UI/UX Designer</h2>
+            <h2>Backend Engineer | Python & Laravel | Microservices • Cloud • AI Integration</h2>
             <Link to='/Portfolio/contact' className='flat-button'>CONTACT ME</Link>
         </div>
 

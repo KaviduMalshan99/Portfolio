@@ -1,26 +1,8 @@
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters"
 import { useState } from "react";
 import './Skills.scss'
-
-
-import reactlg from '../../../src/assets/icons/React-Light.svg';
-import html from '../../../src/assets/icons/HTML.svg';
-import C from '../../../src/assets/icons/C.svg';
-import cpp from '../../../src/assets/icons/CPP.svg';
-import css from '../../../src/assets/icons/CSS.svg';
-import figma from '../../../src/assets/icons/Figma-Dark.svg';
-import git from '../../../src/assets/icons/Git.svg';
-import java from '../../../src/assets/icons/javal.svg';
-import js from '../../../src/assets/icons/js.svg';
-import mysql from '../../../src/assets/icons/MySQL-Dark.svg';
-import next from '../../../src/assets/icons/NextJS-Dark.svg';
-import Node from '../../../src/assets/icons/NodeJS-Dark.svg';
-import php from '../../../src/assets/icons/PHP-Dark.svg';
-import sass from '../../../src/assets/icons/Sass.svg';
-import xd from '../../../src/assets/icons/XD.svg';
 import Loader from "react-loaders";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faPhp, faReact } from "@fortawesome/free-brands-svg-icons";
+
 
 
 const Skills = () => {
@@ -42,24 +24,27 @@ const Skills = () => {
                 />
             </h1>
                 <div className="face1">
-                    <h3>* Frontend Development</h3>
+                    <h3>* Backend Development</h3>
                     <div>
-                        <img src={reactlg} alt="" />
-                        <img src={html} alt="" />
-                        <img src={js} alt="" />
-                        <img src={php} alt="" />
-                        <img src={next} alt="" />
-                        <img src={css} alt="" />
-                        <img src={sass} alt="" />
+                        <img src="https://skillicons.dev/icons?i=python" alt="" className="face22" />
+                        <img src="https://skillicons.dev/icons?i=fastapi" alt="" />
+                        <img src="https://skillicons.dev/icons?i=php" alt="" />
+                        <img src="https://skillicons.dev/icons?i=laravel" alt="" />
+                        <img src="https://skillicons.dev/icons?i=nodejs" alt="" />
+                        <img src="https://skillicons.dev/icons?i=ts" alt="" />
+                        <img src="https://skillicons.dev/icons?i=express" alt="" />
+                        <img src="https://skillicons.dev/icons?i=nestjs" alt="" />
                     </div>
                     
                 </div>
 
                 <div className="face2">
-                    <h3>* Backend Development</h3>
+                    <h3>* Databases & Caching</h3>
                     <div>
-                        <img src={Node} alt="" />
-                        <img src={mysql} alt="" />
+                      <img src="https://skillicons.dev/icons?i=postgres" alt="" />
+                      <img src="https://skillicons.dev/icons?i=mysql" alt="" />
+                      <img src="https://skillicons.dev/icons?i=redis" alt="" />
+                      <img src="https://skillicons.dev/icons?i=mongodb" alt="" />
                     </div>
                     
 
@@ -67,21 +52,23 @@ const Skills = () => {
 
                 <div className="face3">
                     
-                    <h3>* UI/UX Design</h3>
-                    <div><
-                        img src={figma} alt="" />
-                        <img src={xd} alt="" />
+                    <h3>* Cloud & DevOps</h3>
+                    <div>
+                    <img src="https://skillicons.dev/icons?i=docker" alt="" />
+                    <img src="https://skillicons.dev/icons?i=azure" alt="" />
+                    <img src="https://skillicons.dev/icons?i=aws" alt="" />
+                    <img src="https://skillicons.dev/icons?i=github" alt="" />
+                    <img src="https://skillicons.dev/icons?i=git" alt="" />
                     </div>
                     
                 </div>
                 
                 <div className="face4">
-                    <h3>* Other languages</h3>
+                    <h3>* Frontend (Support)</h3>
                     <div>
-                        <img src={C} alt="" />
-                        <img src={cpp} alt="" />
-                        <img src={java} alt="" />
-                        <img src={git} alt="" />
+                    <img src="https://skillicons.dev/icons?i=react" alt="" />
+                    <img src="https://skillicons.dev/icons?i=nextjs" alt="" />
+                    <img src="https://skillicons.dev/icons?i=tailwind" alt="" />
                     </div>
                     
                 </div>
@@ -94,22 +81,22 @@ const Skills = () => {
         <div className='stage-cube-cont'>
             <div className="cubespinner">
               <div className="face1">
-                <FontAwesomeIcon icon={faReact} color='#5ED4F4'/>
+                <img src="https://skillicons.dev/icons?i=python" alt=""  width="90" />
               </div>
               <div className="face2">
-                <FontAwesomeIcon icon={faHtml5} color='#F06529'/>
+                <img src="https://skillicons.dev/icons?i=fastapi" alt="" width="90" />
               </div>
               <div className="face3">
-                <FontAwesomeIcon icon={faJsSquare} color='#EFD81D'/>
+                <img src="https://skillicons.dev/icons?i=laravel" alt="" width="90" />
               </div>
               <div className="face4">
-                <FontAwesomeIcon icon={faGitAlt} color='#EC4D28'/>
+                <img src="https://skillicons.dev/icons?i=docker" alt="" width="90" />
               </div>
               <div className="face5">
-                <FontAwesomeIcon icon={faPhp} color='#777BB3'/>
+                <img src="https://skillicons.dev/icons?i=azure" alt="" width="90" />
               </div>
               <div className="face6">
-                <FontAwesomeIcon icon={faCss3} color='#28A4D9'/>
+                <img src="https://skillicons.dev/icons?i=postgres" alt="" width="90" />
               </div>
             </div>
           </div>

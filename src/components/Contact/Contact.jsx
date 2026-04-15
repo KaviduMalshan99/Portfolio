@@ -4,9 +4,6 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import Contactimg from '../../assets/images/contact.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   const [letterClass] = useState('text-animate');
@@ -14,25 +11,51 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm('service_khjtv0g', 'template_dmnh3to', refForm.current, 'ayVakeTGSVRD7fmY9')
       .then(
-        () => {
-          alert('Message Successfully sent!');
-        },
-        () => {
-          alert('Failed to send the message, please try again');
-        }
+        () => alert('Message Successfully sent!'),
+        () => alert('Failed to send the message, please try again')
       );
   };
+
+  const contactLinks = [
+    {
+      icon: 'https://skillicons.dev/icons?i=gmail',
+      label: 'Gmail',
+      value: 'kavidumalshankulathunga@gmail.com',
+      href: 'mailto:kavidumalshankulathunga@gmail.com',
+    },
+    {
+      icon: 'https://skillicons.dev/icons?i=linkedin',
+      label: 'LinkedIn',
+      value: 'linkedin.com/in/kavidumkulathunga',
+      href: 'https://www.linkedin.com/in/kavidumkulathunga',
+    },
+    {
+      icon: 'https://skillicons.dev/icons?i=github',
+      label: 'GitHub',
+      value: 'github.com/kavidumalshan99',
+      href: 'https://github.com/KaviduMalshan99',
+    },
+    {
+      icon: 'https://img.icons8.com/color/48/whatsapp--v1.png',
+      label: 'WhatsApp',
+      value: '+94 71 970 7610',
+      href: 'https://wa.me/94719707610',
+    },
+  ];
 
   return (
     <>
       <div className="container contact-page">
         <div className="text-Zone">
           <h1>
-            <AnimatedLetters letterClass={letterClass} strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'P', 'a', 'g', 'e']} idx={15} />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['C','o','n','t','a','c','t',' ','P','a','g','e']}
+              idx={15}
+            />
           </h1>
 
           <div className="contact-form">
@@ -59,32 +82,25 @@ const Contact = () => {
         </div>
 
         <div className="second-box">
-
           <div className="img">
-            <img src={Contactimg} useMap="#image_map" alt="Contact" />
+            <img src={Contactimg} alt="Contact" />
           </div>
 
-          
+          <div className="contact-info">
+          {contactLinks.map((item, i) => (
+            <a
+              key={i}
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className="info-item"
+            >
+              <img src={item.icon} alt={item.label} width="46" />
+              <span className="tooltip">{item.value}</span>
+            </a>
+          ))}
+          </div>
         </div>
-
-        <div className="contactdetails">
-
-          <div className="no1">
-            <FontAwesomeIcon icon={faPhone} className='ic'/>
-            <p>+94 71 970 7610</p>
-          </div>
-
-          <div className="no2">
-            <FontAwesomeIcon icon={faWhatsapp} className='ic'/>
-            <p>+94 71 970 7610</p>
-          </div>
-
-          <div className="no3">
-            <FontAwesomeIcon icon={faEnvelope} className='ic'/>
-            <p>kavidumalshan <br /> kulathunga@gmail.com</p>
-          </div>
-            
-          </div>
       </div>
       <Loader type="pacman" />
     </>
