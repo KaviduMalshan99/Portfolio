@@ -81,7 +81,7 @@ const projects = [
   },
   {
     id: 8,
-    title: 'Ceylon BP Management System',
+    title: 'Ceylon BP Project Management System',
     image: img18,
     description: 'Project management tool for handling workflows, tasks, and team collaboration.',
     demoLink: 'https://system.ceylonbp.com/',
