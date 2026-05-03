@@ -14,7 +14,7 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link className='logo' to='/Portfolio/' onClick={closeMenu}>
+      <Link className='logo' to='/' onClick={closeMenu}>
         <img src={LOGO} alt="logo" />
         <p>Kavidu_KM</p>
       </Link>
@@ -25,19 +25,19 @@ const Sidebar = () => {
       </button>
 
       <nav className={menuOpen ? 'open' : ''}>
-        <NavLink exact='true' activeclassname='active' className='home-link' to='/Portfolio/' onClick={closeMenu}>
+        <NavLink exact='true' activeclassname='active' className='home-link' to='/' onClick={closeMenu}>
           <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
         </NavLink>
-        <NavLink exact='true' activeclassname='active' className='about-link' to='/Portfolio/about' onClick={closeMenu}>
+        <NavLink exact='true' activeclassname='active' className='about-link' to='/about' onClick={closeMenu}>
           <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
         </NavLink>
-        <NavLink exact='true' activeclassname='active' className='skill-link' to='/Portfolio/skill' onClick={closeMenu}>
+        <NavLink exact='true' activeclassname='active' className='skill-link' to='/skill' onClick={closeMenu}>
           <FontAwesomeIcon icon={faCode} color='#4d4d4e' />
         </NavLink>
-        <NavLink exact='true' activeclassname='active' className='work-link' to='/Portfolio/work' onClick={closeMenu}>
+        <NavLink exact='true' activeclassname='active' className='work-link' to='/work' onClick={closeMenu}>
           <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e' />
         </NavLink>
-        <NavLink exact='true' activeclassname='active' className='contact-link' to='/Portfolio/contact' onClick={closeMenu}>
+        <NavLink exact='true' activeclassname='active' className='contact-link' to='/contact' onClick={closeMenu}>
           <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
         </NavLink>
 
