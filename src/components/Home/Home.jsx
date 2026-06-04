@@ -9,7 +9,7 @@ const Home = () => {
 
   const [letterClass]=useState('text-animate')
   const nameArray = ['a','v','i','d','u']
-  const jobArray=['B','a','c','k','e','n','d',' ','E','n','g','i','n','e','e','r','.']
+  const jobArray=['B','a','c','k','e','n','d',' ','&',' ','A','I', ' ','E','n','g','i','n','e','e','r','.']
 
   return (
     <>
@@ -34,7 +34,7 @@ const Home = () => {
                 />
             </h1>
 
-            <h2>Backend Engineer | Python & Laravel | Microservices • Cloud • AI Integration</h2>
+            <h2>Backend & AI Engineer | Python & Laravel | FastAPI · ML · Cloud</h2>
             <Link to='/Portfolio/contact' className='flat-button'>CONTACT ME</Link>
         </div>
 

@@ -23,26 +23,28 @@ const About = () => {
           </h1>
 
           <p>
-            I’m Kavidu Malshan Kulathunga, a Backend Engineer with over 3 years of experience
-            building and deploying real-world software systems.
+            I'm Kavidu Kulathunga, a Backend & AI Engineer with 3+ years of experience building and shipping production-ready software systems.
           </p>
 
           <p>
-            I started my journey with PHP (Laravel), where I developed strong foundations in backend
-            development, API design, and database architecture. During this time, I worked on multiple
-            production-level projects and also took on responsibilities in planning, system design,
-            and project management.
+            My journey started with Laravel — where I built full-stack systems, designed database architectures, 
+            and took on project management responsibilities early in my career. That experience gave me a strong 
+            foundation in how real software gets planned, built, and delivered.
           </p>
 
           <p>
-            Over time, I transitioned into Python-based backend development to work with more scalable,
-            modern architectures and AI-integrated systems. I now focus on building APIs, microservices,
-            and cloud-native applications using FastAPI and related technologies.
+            Over time, I expanded into Python, AI/ML, and cloud-native development. I now design and build 
+            intelligent backend systems —  AI pipelines, microservices, REST APIs, and cloud deployments on 
+            AWS and Azure.
           </p>
 
           <p>
             My experience covers the full development lifecycle — from idea and architecture to deployment,
             CI/CD, and maintaining systems in production environments.
+          </p>
+
+          <p>
+            Currently focused on Backend Engineer and AI Engineer roles.
           </p>
 
           <button className='flat-button'>
