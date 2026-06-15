@@ -29,7 +29,7 @@ const projects = [
     image: img17,
     description: 'Research-grade AI system designed to bring self-healing capabilities to enterprise ERP platforms running on Kubernetes infrastructure.',
     tech:'Python · FastAPI · LLM Integration · Machine Learning · PostgreSQL · Vector Search · Docker · Cloud',
-    demoLink: '#', // no public link yet
+    demoLink: 'https://github.com/KaviduMalshan99/zenzhire.git', // no public link yet
     githubLink: 'https://github.com/KaviduMalshan99/zenzhire.git'
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     image: img16,
     description: 'Research-grade AI system designed to bring self-healing capabilities to enterprise ERP platforms running on Kubernetes infrastructure.',
     tech:'Machine Learning · Kubernetes · Docker · Prometheus · Observability · Cloud-native Architecture',
-    demoLink: '#',
+    demoLink: 'https://github.com/SmartopsAi/smartops.git',
     githubLink: 'https://github.com/SmartopsAi/smartops.git'
   },
   {
